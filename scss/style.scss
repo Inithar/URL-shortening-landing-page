@@ -1,0 +1,446 @@
+@import "./colors";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.get-started-btn {
+  padding: 1.5rem 3rem;
+  color: $white;
+  background-color: $cyan;
+  border-radius: 3rem;
+  transition: filter 0.3s;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+}
+
+.logo-link {
+  font-size: 0;
+}
+
+.background-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.header {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 2rem;
+
+    .burger-icon {
+      font-size: 3rem;
+    }
+
+    &__desktop-container {
+      display: none;
+    }
+  }
+
+  .nav-mobile {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 3rem;
+    padding: 3rem 3rem;
+    background-color: $darkViolet;
+    border-radius: 1rem;
+    transform: translateX(-150%);
+    transition: transform 0.6s;
+    z-index: 10;
+
+    &--active {
+      transform: translateX(0);
+    }
+
+    &__link {
+      font-size: 1.8rem;
+      color: $white;
+      margin-bottom: 2rem;
+
+      &--sign-up {
+        padding: 1rem 0;
+        margin-bottom: 1rem;
+        width: 100%;
+        text-align: center;
+        background-color: $cyan;
+        border-radius: 3rem;
+      }
+    }
+
+    .line {
+      margin-bottom: 2rem;
+      width: 100%;
+      height: 0.1rem;
+      background-color: rgba(244, 213, 213, 0.2);
+    }
+  }
+
+  &__box {
+    overflow: hidden;
+  }
+
+  &__img {
+    position: relative;
+    top: 0;
+    right: -7%;
+    width: 130%;
+  }
+
+  &__content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 3rem 18rem;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  &__heading {
+    margin-bottom: 1.5rem;
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  &__text {
+    margin-bottom: 3rem;
+    color: $gray;
+  }
+}
+
+.features {
+  position: relative;
+  scroll-margin-top: 10rem;
+  padding: 8rem 2rem;
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: $lightWhite;
+
+  .shorten {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 2.5rem;
+    width: calc(100% - 4rem);
+    max-width: 120rem;
+    height: 17rem;
+    background-image: url("../images/bg-shorten-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: $darkViolet;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    &__input,
+    &__btn,
+    &__error {
+      z-index: 5;
+    }
+
+    &__input,
+    &__btn {
+      min-height: 4rem;
+      border-radius: 0.5rem;
+    }
+
+    &__input {
+      padding: 1rem;
+      width: 100%;
+      color: $gray;
+
+      &--error {
+        outline-color: $red;
+        border: 0.2rem solid $red;
+
+        &::placeholder {
+          color: rgba($color: $red, $alpha: 0.4);
+        }
+      }
+    }
+
+    &__error {
+      margin: 0.5rem 0 0 0.5rem;
+      font-size: 1.4rem;
+      text-align: left;
+      color: $red;
+    }
+
+    &__btn {
+      margin-top: 1.5rem;
+      font-size: 1.6rem;
+      color: $white;
+      background-color: $cyan;
+      transition: filter 0.3s;
+
+      &:hover {
+        filter: brightness(1.1);
+      }
+    }
+  }
+
+  .shorten-cards-box {
+    margin-bottom: 8rem;
+
+    .shorten-card {
+      margin-top: 2rem;
+      width: 100%;
+      height: 17.5rem;
+      background-color: $white;
+      border-radius: 1rem;
+
+      &__long-link,
+      &__short-link {
+        text-align: left;
+      }
+
+      &__long-link {
+        padding: 1.5rem 2rem;
+      }
+
+      &__line {
+        width: 100%;
+        height: 0.1rem;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+
+      &__box {
+        padding: 0 2rem;
+      }
+
+      &__short-link {
+        padding: 1.5rem 0;
+        color: $cyan;
+      }
+
+      &__copy-btn {
+        padding: 1rem 0;
+        width: 100%;
+        font-size: 1.6rem;
+        color: $white;
+        background-color: $cyan;
+        border-radius: 0.5rem;
+
+        &--copied {
+          background-color: $veryDarkViolet;
+        }
+      }
+    }
+  }
+
+  &__heading {
+    margin-bottom: 1.5rem;
+    font-size: 2.4rem;
+  }
+
+  &__text {
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+    color: $gray;
+  }
+
+  &__cards-box {
+    position: relative;
+  }
+
+  .card {
+    position: relative;
+    margin-top: 8rem;
+    background-color: $white;
+    border-radius: 0.5rem;
+    z-index: 2;
+
+    &__icon-box {
+      position: relative;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 8rem;
+      height: 8rem;
+      background-color: $veryDarkBlue;
+      border-radius: 50%;
+    }
+
+    &__heading {
+      margin: -1rem 0 1.5rem;
+      font-size: 2rem;
+    }
+
+    &__text {
+      padding: 0 3rem 4rem;
+      font-size: 1.6rem;
+      color: $gray;
+    }
+  }
+
+  .line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1rem;
+    height: 100%;
+    background-color: $cyan;
+    z-index: 1;
+  }
+}
+
+.pricing {
+  position: relative;
+  height: 30rem;
+  background-image: url("../images/bg-boost-mobile.svg");
+  background-size: cover;
+  background-position: center;
+  background-color: $darkViolet;
+
+  .wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    z-index: 2;
+  }
+
+  &__heading {
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+    color: $lightWhite;
+  }
+
+  .get-started-btn {
+    font-size: 1.8rem;
+  }
+}
+
+.footer {
+  background-color: $veryDarkViolet;
+  color: $lightWhite;
+
+  .wrapper,
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-link {
+    margin: 5rem 0;
+  }
+
+  &__heading {
+    margin-bottom: 2rem;
+  }
+
+  &__link {
+    margin-bottom: 1rem;
+    color: $grayishViolet;
+
+    &:last-child {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__social-icons {
+    margin-bottom: 5rem;
+
+    a {
+      margin-right: 2rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__social-icon {
+    font-size: 3rem;
+    cursor: pointer;
+    color: $lightWhite;
+  }
+
+  &__link,
+  &__social-icon {
+    transition: color 0.3s;
+
+    &:hover,
+    &:hover {
+      color: $cyan;
+    }
+  }
+}
+
+@import "./small";
+@import "./medium";
+@import "./large";
+@import "./extraLarge";

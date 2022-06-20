@@ -1,0 +1,42 @@
+@media (min-width: 576px) {
+  .header {
+    &__box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__content-box {
+      padding: 6rem 20% 18rem;
+    }
+
+    &__img {
+      right: 0;
+      width: 80%;
+    }
+  }
+
+  .features {
+    .shorten {
+      width: 77%;
+    }
+
+    .shorten-cards-box {
+      margin: 0 9% 8rem;
+    }
+
+    &__cards-box {
+      padding: 0 10%;
+    }
+
+    &__text {
+      padding: 0 5rem;
+    }
+  }
+
+  .pricing {
+    &__heading {
+      font-size: 2.8rem;
+    }
+  }
+}

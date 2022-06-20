@@ -1,0 +1,72 @@
+@media (min-width: 1200px) {
+  .header {
+    &__img {
+      width: 55%;
+    }
+
+    &__content-box {
+      padding: 6rem 0 6rem 4rem;
+    }
+
+    &__heading {
+      font-size: 6.1rem;
+      line-height: 7.5rem;
+    }
+  }
+
+  .features {
+    padding: 8rem 3rem;
+
+    .shorten {
+      width: 95%;
+      background-size: cover;
+    }
+
+    .shorten-cards-box {
+      margin: 0 0rem 8rem;
+
+      .shorten-card {
+        &__short-link {
+          margin-right: 3rem;
+        }
+
+        &__copy-btn {
+          padding: 1rem 2rem;
+        }
+      }
+    }
+  }
+
+  .footer {
+    &__links,
+    &__social-icons {
+      padding: 0 4rem;
+    }
+
+    .wrapper {
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .logo-link {
+      margin: 0;
+      width: 20%;
+    }
+
+    &__social-icons {
+      flex-direction: row;
+      justify-content: center;
+      margin-left: 0;
+      padding-right: 0;
+
+      a {
+        margin-right: 2rem;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

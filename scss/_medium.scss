@@ -1,0 +1,124 @@
+@media (min-width: 768px) {
+  .get-started-btn {
+    padding: 1rem 3rem;
+  }
+
+  .header {
+    .nav {
+      justify-content: start;
+      padding: 4rem 4rem;
+
+      .burger-icon {
+        display: none;
+      }
+
+      &__desktop-container {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 4rem;
+        width: 100%;
+      }
+
+      &__link,
+      &__login-link {
+        margin-right: 2.5rem;
+        font-size: 1.6rem;
+        color: $grayishViolet;
+        transition: color 0.3s;
+
+        &:hover,
+        &:hover {
+          color: $veryDarkViolet;
+        }
+      }
+
+      &__login-link--sign-up {
+        margin: 0;
+        padding: 0.8rem 1.6rem;
+        background-color: $cyan;
+        color: $white;
+        border-radius: 3rem;
+        transition: filter 0.3s, color 0.3s;
+
+        &:hover {
+          color: $white;
+          filter: brightness(1.1);
+        }
+      }
+    }
+
+    &__box {
+      flex-direction: row-reverse;
+      padding: 2rem 0 18rem;
+    }
+
+    &__img {
+      right: -7%;
+      width: 50%;
+      height: 33rem;
+    }
+
+    &__content-box {
+      align-items: flex-start;
+      padding: 2rem 0 2rem 4rem;
+      text-align: start;
+    }
+
+    &__heading {
+      font-size: 4.1rem;
+      line-height: 5rem;
+    }
+
+    &__text {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  .features {
+    .shorten {
+      width: 80%;
+    }
+
+    .shorten-cards-box {
+      margin: 0 15% 8rem;
+    }
+  }
+
+  .pricing {
+    height: 25rem;
+    background-image: url("../images/bg-boost-desktop.svg");
+  }
+
+  .footer {
+    padding-top: 5rem;
+
+    .wrapper {
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .logo-link {
+      margin: 0;
+      width: 25%;
+    }
+
+    &__links,
+    &__social-icons {
+      align-items: flex-start;
+      padding: 0 2rem;
+    }
+
+    &__social-icons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 3rem;
+    }
+
+    &__social-icon {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+  }
+}

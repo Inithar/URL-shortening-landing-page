@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/47068b172e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <nav class="nav">
+          <a href="#" class="logo-link">
+            <img src="./images/logo.svg" alt="Brand logo" />
+          </a>
+          <i class="burger-icon fa-solid fa-bars"></i>
+          <div class="nav__desktop-container">
+            <div class="nav__links">
+              <a href="#features" class="nav__link">Features</a>
+              <a href="#pricing" class="nav__link">Pricing</a>
+              <a href="#resources" class="nav__link">Resources</a>
+            </div>
+            <div class="nav__login-links">
+              <a href="#" class="nav__login-link">Login</a>
+              <a href="#" class="nav__login-link nav__login-link--sign-up"
+                >Sign Up</a
+              >
+            </div>
+          </div>
+        </nav>
+
+        <nav class="nav-mobile">
+          <a href="#features" class="nav-mobile__link">Features</a>
+          <a href="#pricing" class="nav-mobile__link">Pricing</a>
+          <a href="#resources" class="nav-mobile__link">Resources</a>
+          <div class="line"></div>
+          <a href="#" class="nav-mobile__link">Login</a>
+          <a href="#" class="nav-mobile__link nav-mobile__link--sign-up"
+            >Sign Up</a
+          >
+        </nav>
+
+        <div class="header__box">
+          <img
+            class="header__img"
+            src="./images/illustration-working.svg"
+            alt="Woman is seated at a desk and is working on the computer"
+          />
+          <div class="header__content-box">
+            <h1 class="header__heading">More than just shorter links</h1>
+            <p class="header__text">
+              Build your brand’s recognition and get detailed insights on how
+              your links are performing.
+            </p>
+            <a href="#features" class="get-started-btn">Get started</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="features" class="features">
+        <div class="wrapper">
+          <div class="shorten">
+            <div class="shorten__box">
+              <input
+                type="url"
+                class="shorten__input"
+                placeholder="Shorten a link here..."
+              />
+              <p class="shorten__error"></p>
+            </div>
+            <button class="shorten__btn">Shorten It!</button>
+          </div>
+
+          <div class="shorten-cards-box"></div>
+
+          <h2 class="features__heading">Advanced Statistics</h2>
+          <p class="features__text">
+            Track how your links are performing across the web with our advanced
+            statistics dashboard.
+          </p>
+          <div class="features__cards-box">
+            <div class="card card--one">
+              <div class="card__icon-box">
+                <img src="./images/icon-brand-recognition.svg" alt="" />
+              </div>
+              <h3 class="card__heading">Brand Recognition</h3>
+              <p class="card__text">
+                Boost your brand recognition with each click. Generic links
+                don’t mean a thing. Branded links help instil confidence in your
+                content.
+              </p>
+            </div>
+            <div class="card card--two">
+              <div class="card__icon-box">
+                <img src="./images/icon-detailed-records.svg" alt="" />
+              </div>
+              <h3 class="card__heading">Detailed Records</h3>
+              <p class="card__text">
+                Gain insights into who is clicking your links. Knowing when and
+                where people engage with your content helps inform better
+                decisions.
+              </p>
+            </div>
+            <div class="card card--three">
+              <div class="card__icon-box">
+                <img src="./images/icon-fully-customizable.svg" alt="" />
+              </div>
+              <h3 class="card__heading">Fully Customizable</h3>
+              <p class="card__text">
+                Improve brand awareness and content discoverability through
+                customizable links, supercharging audience engagement.
+              </p>
+            </div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="pricing">
+        <div class="background-shadow"></div>
+        <div class="wrapper">
+          <h2 class="pricing__heading">Boost your links today</h2>
+          <a href="#" class="get-started-btn">Get started</a>
+        </div>
+      </section>
+    </main>
+
+    <footer id="resources" class="footer">
+      <div class="wrapper">
+        <a href="#" class="logo-link">
+          <img src="./images/logo-white.svg" alt="Brand logo" />
+        </a>
+        <div class="footer__links">
+          <h3 class="footer__heading">Features</h3>
+          <a href="#" class="footer__link">Link Shortening</a>
+          <a href="#" class="footer__link">Branded Links</a>
+          <a href="#" class="footer__link">Analytics</a>
+        </div>
+        <div class="footer__links">
+          <h3 class="footer__heading">Resources</h3>
+          <a href="#" class="footer__link">Blog</a>
+          <a href="#" class="footer__link">Developers</a>
+          <a href="#" class="footer__link">Support</a>
+        </div>
+        <div class="footer__links">
+          <h3 class="footer__heading">Company</h3>
+          <a href="#" class="footer__link">About</a>
+          <a href="#" class="footer__link">Our Team</a>
+          <a href="#" class="footer__link">Careers</a>
+          <a href="#" class="footer__link">Contact</a>
+        </div>
+
+        <div class="footer__social-icons">
+          <a href="#"><i class="footer__social-icon fab fa-facebook-square"></i></a>
+          <a href="#"><i class="footer__social-icon fab fa-twitter"></i></a>
+          <a href="#"><i class="footer__social-icon fab fa-pinterest"></i></a>
+          <a href="#"><i class="footer__social-icon fab fa-instagram"></i></a>
+      </div>
+    </footer>
+
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
